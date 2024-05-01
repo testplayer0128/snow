@@ -1,0 +1,207 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+  font-family:"Dancing Script",Serif;
+  font-style: italic;
+}
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --snow:#99ffc9;
+    --sw:rgba(153, 255, 201,0.3);
+    --ww:rgba(255, 255, 255,.5);
+    --bk:rgba(0,0,0,0.5);
+    --kage:1px 1px 1px black;
+    --w1:url(../image/another/1.another.jpg);
+    --w2:url(../image/another/2.another.jpg);
+    --w3:url(../image/another/3.another.jpg);
+    --w4:url(../image/another/4.another.jpg);
+}
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.fa{
+    margin-right: 5px;
+}
+
+body{
+    background-color: var(--sw);
+}
+h1, a{
+    font-size:30px;
+    font-weight: normal;
+}
+
+header, footer{
+    color: var(--snow);
+    padding: 5px 20px;
+    text-shadow: var(--kage);
+}
+header , .link ul{
+    display: flex;
+}
+header img{
+    height: 36px;
+    padding-right: 10px;
+}
+
+.menu-icon, .link-icon input[type="checkbox"]{
+    display: none;
+}
+.link{
+    height: 30px;
+    line-height: 30px;
+    background-color: var(--ww);
+    padding: 0 10px;
+}
+.link li{
+    padding: 0 10px;
+}
+.link a{
+    font-size: 16px;
+    text-shadow: var(--kage),1px 1px 3px snow;
+}
+.male{color: blue;}
+.female{color: red;}
+
+.introduction{
+    background-color: rgba(255,255,255,0.7);
+}
+.introduction h1{
+    padding: 0 20px;
+}
+.introduction li{
+    padding: 5px 20px;
+    text-shadow: 1px 1px 1px white;
+}
+.bg{
+    background-repeat: no-repeat;
+    background-position: right top, right bottom;
+    background-size: 50% 50%;
+}
+.bg h1{
+    text-shadow: var(--kage), 0px 0px 5px snow;
+}
+.snow{
+    width: 50%;
+}
+.snow ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 10px
+}
+.snow li{
+    width: 50%;
+    line-height: 1.5;
+}
+.snow a{
+    font-size: 16px;
+    padding: 0 5px;
+    border-radius: 15px;
+    color: black;
+}
+a:hover{
+    color: snow;
+    text-shadow: var(--kage);
+}
+.male1 h1{
+    color: blue;
+}
+.male1{
+    background-image: var(--w1), var(--w2);
+    background-color: rgba(0, 0, 255,.1);
+}
+.male1 a:hover{
+    background-color: blue;
+}
+.female1 h1{
+    color: red;
+}
+.female1{
+    background-image: var(--w3), var(--w4);
+    background-color: rgba(255,0,0,.1);
+}
+.female1 a:hover{
+    background-color: red;
+}
+
+footer img{
+    height: 60px;
+}
+
+.page{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.page a{
+    margin: 0 10px;
+}
+.icon{
+    height: 25px;
+    width: 25px;
+    border-radius: 3.5px;
+    background-color: var(--bk);
+}
+
+@media screen and (max-width:768px) {
+    .menu-icon{
+        display: block;
+        color: var(--snow);
+        text-shadow: var(--kage);
+        cursor: pointer;
+        position: absolute;
+        font-size: 20px;
+        top: 12px;
+        right: 20px;
+    }
+    .link{
+        height: 0;
+        overflow: hidden;
+    }
+    .switch:checked + .link{
+        height: auto;
+    }
+    .icon{
+        height: 20px;
+        width: 20px;
+    }
+}
+@media screen and (max-width:480px) {
+    .introduction{
+        background-color: transparent;
+    }
+    .introduction li{
+        text-shadow: var(--kage);
+    }
+    .bg{
+        background-size: 100% 50%;
+    }
+    .snow{
+        background-color: rgba(255,255,255,0.3);
+        width: 100%;
+    }
+    .snow a{
+        color: snow;
+    }
+    .male1{
+        margin-bottom: 20px;
+    }
+    footer{
+        margin-bottom: 20px;
+    }
+}

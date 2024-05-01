@@ -1,0 +1,262 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+  font-family:"Dancing Script",Serif;
+  font-style: italic;
+}
+
+:root{
+    --tenma:#fa0;
+    --tbc:rgba(255, 170, 0,.1);
+    --st:url(../image/flower/2-1.tenma.jpg);
+    --yuki:#ffc0df;
+    --ybc:rgba(255, 192, 223,.1);
+    --ry:url(../image/flower/2-2.yuki.jpg);
+    --muku:#64f0ff;
+    --mbc:rgba(100, 240, 255,.1);
+    --sm:url(../image/flower/2-3.muku.jpg);
+    --misumi:#ffeb00;
+    --sbc:rgba(255, 235, 0,.1);
+    --im:url(../image/flower/2-4.misumi.jpg);
+    --kazu:#00ff96;
+    --kbc:rgba(0, 255, 150,.1);
+    --mk:url(../image/flower/2-5.kazu.jpg);
+    --kumon:#d2aaf0;
+    --hbc:rgba(210, 170, 240,.1);
+    --hk:url(../image/flower/2-6.kumon.jpg);
+    --natu:#ffc800;
+    --su:rgba(255,200,0,0.3);
+    --ww:rgba(255,255,255,.5);
+    --bk:rgba(0,0,0,.5);
+    --kage:1px 1px 1px black;
+}
+*{box-sizing: border-box;}
+ul{list-style: none;}
+.fa{margin-right: 5px;}
+body{background-color: var(--su);}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1, a{
+    font-size:30px;
+    font-weight: normal;
+}
+
+header, footer{
+    color: var(--natu);
+    padding: 5px 20px;
+    text-shadow: var(--kage);
+}
+header, .link ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+header img{
+    height: 36px;
+    padding-right: 10px;
+}
+
+.menu-icon, .link-icon input[type="checkbox"]{
+    display: none;
+}
+.link{
+    height: 30px;
+    line-height: 30px;
+    background-color: var(--ww);
+    padding: 0 10px;
+}
+.link li{
+    padding: 0 10px;
+}
+.link a{
+    font-size: 16px;
+    text-shadow: var(--kage),1px 1px 3px snow;
+}
+.tenma{color: var(--tenma);}
+.yuki{color: var(--yuki);}
+.muku{color: var(--muku);}
+.misumi{color: var(--misumi);}
+.kazu{color: var(--kazu);}
+.kumon{color: var(--kumon);}
+
+.introduction{
+    background-color: rgba(255,255,255,0.7);
+}
+.introduction h1{
+    padding: 0 20px;
+}
+.introduction li{
+    padding: 5px 20px;
+    text-shadow: 1px 1px 1px white;
+}
+.bg{
+    background-position: right;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+}
+.bg h1{
+    text-shadow: var(--kage), 0px 0px 5px snow;
+}
+.natu{
+    width: 50%;
+}
+.natu ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+.natu li{
+    width: 50%;
+    line-height: 1.5;
+}
+.natu a{
+    font-size: 16px;
+    padding: 0 5px;
+    border-radius: 15px;
+    color: black;
+}
+a:hover{
+    color: snow;
+    text-shadow: var(--kage);
+}
+.st{
+    background-image: var(--st);
+    background-color: var(--tbc);
+}
+.st h1{
+    color: var(--tenma);
+}
+.st a:hover{
+    background-color: var(--tenma);
+}
+.ry{
+    background-image: var(--ry);
+    background-color: var(--ybc);
+}
+.ry h1{
+    color: var(--yuki);
+}
+.ry a:hover{
+    background-color: var(--yuki);
+}
+.sm{
+    background-image: var(--sm);
+    background-color: var(--mbc);
+}
+.sm h1{
+    color: var(--muku);
+}
+.sm a:hover{
+    background-color: var(--muku);
+}
+.im{
+    background-image: var(--im);
+    background-color: var(--sbc);
+}
+.im h1{
+    color: var(--misumi);
+}
+.im a:hover{
+    background-color: var(--misumi);
+}
+.mk{
+    background-image: var(--mk);
+    background-color: var(--kbc);
+}
+.mk h1{
+    color: var(--kazu);
+}
+.mk a:hover{
+    background-color: var(--kazu);
+}
+.hk{
+    background-image: var(--hk);
+    background-color: var(--hbc);
+}
+.hk h1{
+    color: var(--kumon);
+}
+.hk a:hover{
+    background-color: var(--kumon);
+}
+
+footer img{
+    height: 60px;
+}
+
+.page{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.page a{
+    margin: 0 10px;
+}
+.icon{
+    height: 25px;
+    width: 25px;
+    border-radius: 3.5px;
+    background-color: var(--bk);
+}
+
+@media screen and (max-width:768px) {
+    .menu-icon{
+        display: block;
+        color: var(--natu);
+        text-shadow: var(--kage);
+        cursor: pointer;
+        position: absolute;
+        font-size: 20px;
+        top: 12px;
+        right: 20px;
+    }
+    .link{
+        overflow: hidden;
+        height: 0;
+    }
+    .switch:checked + .link{
+        height: auto;
+    }
+    .icon{
+        height: 20px;
+        width: 20px;
+    }
+}
+@media screen and (max-width:480px) {
+    .link li{
+        width: calc(100%/3);
+        text-align: center;
+    }
+    .introduction{
+        background-color: transparent;
+    }
+    .introduction li{
+        text-shadow: var(--kage);
+    }
+    .bg{
+        background-position: 0 0;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+    .natu{
+        background-color: rgba(255,255,255,0.3);
+        width: 100%;
+    }
+    .natu a{
+        color: snow;
+    }
+    .hk{
+        margin-bottom: 0;
+    }
+    footer{
+        margin-bottom: 20px;
+    }
+}

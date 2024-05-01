@@ -1,0 +1,295 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+  font-family:"Dancing Script",Serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+:root{
+    --sakuya:#ff8282;
+    --ss:rgba(255,130,130,0.7);
+    --masumi:#826ee6;
+    --um:rgba(130, 110, 230,0.7);
+    --tuduru:#00e6b4;
+    --mt:rgba(0, 230, 180,0.7);
+    --itaru:#ff375e;
+    --ci:rgba(255, 172, 189, 0.7);
+    --citron:#ade601;
+    --ac:rgba(173, 230, 1,0.7);
+    --tikage:#50d2d0;
+    --ut:rgba(80, 210, 208,0.7);
+    --tenma:#fa0;
+    --st:rgba(255, 170, 0,0.7);
+    --yuki:#ffc0df;
+    --ry:rgba(255, 192, 223,0.7);
+    --muku:#64f0ff;
+    --sm:rgba(100, 240, 255,0.7);
+    --misumi:#ffeb00;
+    --im:rgba(255, 235, 0,0.7);
+    --kazu:#00ff96;
+    --mk:rgba(0, 255, 150,0.7);
+    --kumon:#d2aaf0;
+    --hk:rgba(210, 170, 240,0.7);
+    --banri:#be8c00;
+    --sb:rgba(190, 140, 0,0.7);
+    --juza:#787878;
+    --hj:rgba(120, 120, 120,0.7);
+    --taiti:#ff4a8e;
+    --nt:rgba(255, 74, 142,0.7);
+    --omi:#782800;
+    --fo:rgba(120, 40, 0,0.7);
+    --sakyo:#c8be96;
+    --fs:rgba(200, 190, 150,0.7);
+    --azami:#ff5029;
+    --ia:rgba(255, 80, 41,0.7);
+    --tumugi:#0032be;
+    --tu:rgba(0, 50, 190,0.7);
+    --tasuku:#00c80a;
+    --ta:rgba(0, 200, 10,0.7);
+    --hisoka:#001482;
+    --hi:rgba(0, 20, 130,0.7);
+    --homare:#d20029;
+    --ho:rgba(210, 0, 41,0.7);
+    --azuma:#a00096;
+    --ya:rgba(160, 0, 150,0.7);
+    --guy:#004d32;
+    --gu:rgba(0, 77, 50,0.7);
+    --haru:#ff91b2;
+    --natu:#ffc800;
+    --aki:#ff9b63;
+    --fuyu:#6ac1ff;
+    --kage:1px 1px 1px black;
+    --bk:rgba(0,0,0,0.5);
+    --sp:url(../image/background/1.spring-image.png);
+    --su:url(../image/background/2.summer-image.png);
+    --au:url(../image/background/3.autumn-image.png);
+    --wi:url(../image/background/4.winter-image.png);
+}
+
+ul{list-style: none;}
+h1{font-size: 30px;}
+h4{font-size: 20px;}
+p{display: inline-block;}
+
+li,a{
+    font-size: 13.5px;
+    text-decoration: none;
+}
+
+body{
+    background-color: aliceblue;
+    line-height: 1.5;
+}
+main{text-shadow: var(--kage);}
+
+header{padding: 5px 20px;}
+
+.menu-icon, .link-icon input[type="checkbox"]{
+    display: none;
+}
+.link{
+    height: 30px;
+}
+.link ul{
+    display: flex;
+}
+.link li{
+    padding: 0 10px;
+}
+.link li:first-child{
+    padding-left: 20px;
+}
+.link a{
+    font-size: 16px;
+}
+.spring{color: var(--haru);}
+.summer{color: var(--natu);}
+.autumn{color: var(--aki);}
+.winter{color: var(--fuyu);}
+
+.mankai{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mankai h1{
+    padding-left: 10px;
+    text-shadow: var(--kage),0px 0px 1px snow;
+}
+#spring{background-image: var(--sp);}
+#summer{background-image: var(--su);}
+#autumn{background-image: var(--au);}
+#winter{background-image: var(--wi);}
+
+.member{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(200,200,200,.35);
+}
+.list{
+    width: calc((100% - 100px)/ 3);
+    margin: 10px calc(100px/6);
+}
+.list a,p{padding-left: 5px;}
+.list h4{
+    padding: 0 5px;
+    text-shadow: -1px -1px 10px snow,var(--kage);
+    width: fit-content;
+    border-radius: 5px;
+}
+.list ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:10px;
+}
+.list li{
+    width: 50%;
+    padding-bottom: 5px;
+}
+.first, .k1st{
+    margin-top: 5px;
+}
+.info, .kid{
+    border-radius: 10px;
+}
+/*character color*/
+.sakuya, .sakuya a{color: var(--sakuya);}
+.sakuya .info:hover, .sakuya .kid:hover, .sakuya h4:hover{background-color: var(--ss);}
+.masumi, .masumi a{color: var(--masumi);}
+.masumi .info:hover, .masumi .kid:hover, .masumi h4:hover{background-color: var(--um);}
+.tuduru, .tuduru a{color: var(--tuduru);}
+.tuduru .info:hover, .tuduru .kid:hover, .tuduru h4:hover{background-color: var(--mt);}
+.itaru, .itaru a{color: var(--itaru);}
+.itaru .info:hover, .itaru .kid:hover, .itaru h4:hover{background-color: var(--ci);}
+.citron, .citron a{color: var(--citron);}
+.citron .info:hover, .citron .kid:hover, .citron h4:hover{background-color: var(--ac);}
+.tikage, .tikage a{color: var(--tikage);}
+.tikage .info:hover, .tikage .kid:hover, .tikage h4:hover{background-color: var(--ut);}
+.tenma, .tenma a{color: var(--tenma);}
+.tenma .info:hover, .tenma .kid:hover, .tenma h4:hover{background-color: var(--st);}
+.yuki, .yuki a{color: var(--yuki);}
+.yuki .info:hover, .yuki .kid:hover, .yuki h4:hover{background-color: var(--ry);}
+.muku, .muku a{color: var(--muku);}
+.muku .info:hover, .muku .kid:hover, .muku h4:hover{background-color: var(--sm);}
+.misumi, .misumi a{color: var(--misumi);}
+.misumi .info:hover, .misumi .kid:hover, .misumi h4:hover{background-color: var(--im);}
+.kazu, .kazu a{color: var(--kazu);}
+.kazu .info:hover, .kazu .kid:hover, .kazu h4:hover{background-color: var(--mk);}
+.kumon, .kumon a{color: var(--kumon);}
+.kumon .info:hover, .kumon .kid:hover, .kumon h4:hover{background-color: var(--hk);}
+.banri, .banri a{color: var(--banri);}
+.banri .info:hover, .banri .kid:hover, .banri h4:hover{background-color: var(--sb);}
+.juza, .juza a{color: var(--juza);}
+.juza .info:hover, .juza .kid:hover, .juza h4:hover{background-color: var(--hj);}
+.taiti, .taiti a{color: var(--taiti);}
+.taiti .info:hover, .taiti .kid:hover, .taiti h4:hover{background-color: var(--nt);}
+.omi, .omi a{color: var(--omi);}
+.omi .info:hover, .omi .kid:hover, .omi h4:hover{background-color: var(--fo);}
+.sakyo, .sakyo a{color: var(--sakyo);}
+.sakyo .info:hover, .sakyo .kid:hover, .sakyo h4:hover{background-color: var(--fs);}
+.azami, .azami a{color: var(--azami);}
+.azami .info:hover, .azami .kid:hover, .azami h4:hover{background-color: var(--ia);}
+.tumugi, .tumugi a{color: var(--tumugi);}
+.tumugi .info:hover, .tumugi .kid:hover, .tumugi h4:hover{background-color: var(--tu);}
+.tasuku, .tasuku a{color: var(--tasuku);}
+.tasuku .info:hover, .tasuku .kid:hover, .tasuku h4:hover{background-color: var(--ta);}
+.hisoka, .hisoka a{color: var(--hisoka);}
+.hisoka .info:hover, .hisoka .kid:hover, .hisoka h4:hover{background-color: var(--hi);}
+.homare, .homare a{color: var(--homare);}
+.homare .info:hover, .homare .kid:hover, .homare h4:hover{background-color: var(--ho);}
+.azuma, .azuma a{color: var(--azuma);}
+.azuma .info:hover, .azuma .kid:hover, .azuma h4:hover{background-color: var(--ya);}
+.guy, .guy a{color: var(--guy);}
+.guy .info:hover, .guy .kid:hover, .guy h4:hover{background-color: var(--gu);}
+
+.info a:hover, .mankai p:hover, .kid a:hover, .kid p:hover{
+    text-decoration: underline solid;
+}
+.info:hover, .info:hover a, .kid:hover a, .kid:hover p,.link a:hover, .mankai h4:hover{
+    color: snow;
+}
+
+footer{
+    height: 60px;
+    padding: 0 20px;
+}
+.logo{height: 100%;}
+
+.page{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.page a{margin: 0 10px;}
+.icon{
+    height: 25px;
+    width: 25px;
+    border-radius: 3.5px;
+    background-color: var(--bk);
+}
+
+@media screen and (max-width:768px) {
+    .menu-icon{
+        display: block;
+        color: black;
+        text-shadow: none;
+        cursor: pointer;
+        position: absolute;
+        font-size: 20px;
+        top: 15px;
+        right: 20px;
+    }
+    .link{
+        overflow: hidden;
+        height: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .link li{
+        width: calc((100% - 50px)/4);
+        margin: 0 calc(50px/8);
+        text-align: center;
+        padding: 0;
+    }
+    .link li:first-child{
+        padding: 0;
+    }
+    .switch:checked + .link{
+        height: auto;
+    }
+    .mankai{
+        background-size: cover;
+    }
+    .list{
+        width: calc((100% - 30px) / 3);
+        margin: 10px calc(30px/6);
+    }
+    .info li{
+        width: 100%;
+    }
+    .info li:first-child{
+        margin-top: 5px;
+    }
+    .first{
+        margin-top: 0;
+    }
+    .icon{
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .list{
+        width: calc((100% - 30px)/2);
+        margin: 10px calc(30px/4);
+    }
+    footer{
+        margin-bottom: 20px;
+    }
+}

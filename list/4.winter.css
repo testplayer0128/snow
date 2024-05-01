@@ -1,0 +1,261 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+  font-family:"Dancing Script",Serif;
+  font-style: italic;
+}
+
+:root{
+    --tumugi:#0032be;
+    --tubc:rgba(0, 50, 190,.1);
+    --tu:url(../image/flower/4-1.tumugi.jpg);
+    --tasuku:#00c80a;
+    --tabc:rgba(0, 200, 10,.1);
+    --ta:url(../image/flower/4-2.tasuku.jpg);
+    --hisoka:#001482;
+    --hibc:rgba(0, 20, 130,.1);
+    --mh:url(../image/flower/4-3.hisoka.jpg);
+    --homare:#d20029;
+    --hobc:rgba(210, 0, 41,.1);
+    --ah:url(../image/flower/4-4.homare.jpg);
+    --azuma:#a00096;
+    --abc:rgba(160, 0, 150,.1);
+    --ya:url(../image/flower/4-5.azuma.jpg);
+    --guy:#004d32;
+    --gbc:rgba(0, 77, 50,.1);
+    --ng:url(../image/flower/4-6.guy.jpg);
+    --fuyu:#6ac1ff;
+    --wi:rgba(106,193,255,0.3);
+    --ww:rgba(255,255,255,.5);
+    --bk:rgba(0,0,0,0.5);
+    --kage:1px 1px 1px black;
+}
+*{box-sizing: border-box;}
+ul{list-style: none;}
+.fa{margin-right: 5px;}
+body{background-color: var(--wi);}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+h1, a{
+    font-size:30px;
+    font-weight: normal;
+}
+
+header, footer{
+    color: var(--fuyu);
+    padding: 5px 20px;
+    text-shadow: var(--kage);
+}
+header, .link ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+header img{
+    height: 36px;
+    padding-right: 10px;
+}
+
+.menu-icon, .link-icon input[type="checkbox"]{
+    display: none;
+}
+.link{
+    height: 30px;
+    line-height: 30px;
+    background-color: var(--ww);
+    padding: 0 10px;
+}
+.link li{
+    padding: 0 10px;
+}
+.link a{
+    font-size: 16px;
+    text-shadow: var(--kage),1px 1px 3px snow;
+}
+.tumugi{color: var(--tumugi);}
+.tasuku{color: var(--tasuku);}
+.hisoka{color: var(--hisoka);}
+.homare{color: var(--homare);}
+.azuma{color: var(--azuma);}
+.guy{color: var(--guy);}
+
+.introduction{
+    background-color: rgba(255,255,255,0.7);
+}
+.introduction h1{
+    padding: 0 20px;
+}
+.introduction li{
+    padding: 5px 20px;
+    text-shadow: 1px 1px 1px white;
+}
+.bg{
+    background-position: right;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+}
+.bg h1{
+    text-shadow: var(--kage), 0px 0px 5px snow;
+}
+.fuyu{
+    width: 50%;
+}
+.fuyu ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+.fuyu li{
+    width: 50%;
+    line-height: 1.5;
+}
+.fuyu a{
+    font-size: 16px;
+    padding: 0 5px;
+    border-radius: 15px;
+    color: black;
+}
+a:hover{
+    color: snow;
+    text-shadow: var(--kage);
+}
+.tu{
+    background-image: var(--tu);
+    background-color: var(--tubc);
+}
+.tu h1{
+    color: var(--tumugi);
+}
+.tu a:hover{
+    background-color: var(--tumugi);
+}
+.ta{
+    background-image: var(--ta);
+    background-color: var(--tabc);
+}
+.ta h1{
+    color: var(--tasuku);
+}
+.ta a:hover{
+    background-color: var(--tasuku);
+}
+.mh{
+    background-image: var(--mh);
+    background-color: var(--hibc);
+}
+.mh h1{
+    color: var(--hisoka);
+}
+.mh a:hover{
+    background-color: var(--hisoka);
+}
+.ah{
+    background-image: var(--ah);
+    background-color: var(--hobc);
+}
+.ah h1{
+    color: var(--homare);
+}
+.ah a:hover{
+    background-color: var(--homare);
+}
+.ya{
+    background-image: var(--ya);
+    background-color: var(--abc);
+}
+.ya h1{
+    color: var(--azuma);
+}
+.ya a:hover{
+    background-color: var(--azuma);
+}
+.ng{
+    background-image: var(--ng);
+    background-color: var(--gbc);
+}
+.ng h1{
+    color: var(--guy);
+}
+.ng a:hover{
+    background-color: var(--guy);
+}
+
+footer img{
+    height: 60px;
+}
+
+.page{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.page a{
+    margin: 0 10px;
+}
+.icon{
+    height: 25px;
+    width: 25px;
+    border-radius: 3.5px;
+    background-color: var(--bk);
+}
+
+@media screen and (max-width:768px) {
+    .menu-icon{
+        display: block;
+        color: var(--fuyu);
+        text-shadow: var(--kage);
+        cursor: pointer;
+        position: absolute;
+        font-size: 20px;
+        top: 12px;
+        right: 20px;
+    }
+    .link{
+        overflow: hidden;
+        height: 0;
+    }
+    .switch:checked + .link{
+        height: auto;
+    }
+    .icon{
+        height: 20px;
+        width: 20px;
+    }
+}
+@media screen and (max-width:480px) {
+    .link li{
+        width: calc(100%/3);
+        text-align: center;
+    }
+    .introduction{
+        background-color: transparent;
+    }
+    .introduction li{
+        text-shadow: var(--kage);
+    }
+    .bg{
+        background-position: 0 0;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+    .fuyu{
+        background-color: rgba(255,255,255,0.3);
+        width: 100%;
+    }
+    .fuyu a{
+        color: snow;
+    }
+    .ng{
+        margin-bottom: 0;
+    }
+    footer{
+        margin-bottom: 20px;
+    }
+}

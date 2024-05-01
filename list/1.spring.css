@@ -1,0 +1,262 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+  font-family:"Dancing Script",Serif;
+  font-style: italic;
+}
+
+:root{
+    --sakuya:#ff8282;
+    --sbc:rgba(255, 130, 130,.1);
+    --ss:url(../image/flower/1-1.sakuya.jpg);
+    --masumi:#826ee6;
+    --mbc:rgba(130, 110, 230,.1);
+    --um:url(../image/flower/1-2.masumi.jpg);
+    --tuduru:#00e6b4;
+    --tbc:rgba(0, 230, 180,.1);
+    --mt:url(../image/flower/1-3.tuduru.jpg);
+    --itaru:#ff375e;
+    --ibc:rgba(255, 55, 94,.1);
+    --ti:url(../image/flower/1-4.itaru.jpg);
+    --citron:#ade601;
+    --cbc:rgba(173, 230, 1,.1);
+    --ac:url(../image/flower/1-5.citron.jpg);
+    --tikage:#50d2d0;
+    --ubc:rgba(80, 210, 208,.1);
+    --ut:url(../image/flower/1-6.tikage.jpg);
+    --haru:#ff91b2;
+    --sp:rgba(255,145,178,0.3);
+    --ww:rgba(255,255,255,.5);
+    --bk:rgba(0,0,0,.5);
+    --kage:1px 1px 1px black;
+}
+*{box-sizing: border-box;}
+ul{list-style: none;}
+.fa{margin-right: 5px;}
+body{background-color: var(--sp);}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1,a{
+    font-size:30px;
+    font-weight: normal;
+}
+
+header, footer{
+    color: var(--haru);
+    padding: 5px 20px;
+    text-shadow: var(--kage);
+}
+header, .link ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+header img{
+    height: 36px;
+    padding-right: 10px;
+}
+
+.menu-icon, .link-icon input[type="checkbox"]{
+    display: none;
+}
+.link{
+    height: 30px;
+    line-height: 30px;
+    background-color: var(--ww);
+    padding: 0 10px;
+}
+.link li{
+    padding: 0 10px;
+}
+.link a{
+    font-size: 16px;
+    text-shadow: var(--kage),1px 1px 3px snow;
+}
+.sakuya{color: var(--sakuya);}
+.masumi{color: var(--masumi);}
+.tuduru{color: var(--tuduru);}
+.itaru{color: var(--itaru);}
+.citron{color: var(--citron);}
+.tikage{color: var(--tikage);}
+
+.introduction{
+    background-color: rgba(255,255,255,0.7);
+}
+.introduction h1{
+    padding: 0 20px;
+}
+.introduction li{
+    padding: 5px 20px;
+    text-shadow: 1px 1px 1px white;
+}
+.bg{
+    background-position: right;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+}
+.bg h1{
+    text-shadow: var(--kage),0px 0px 5px snow;
+}
+.haru{
+    width: 50%;
+}
+.haru ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+.haru li{
+    width: 50%;
+    line-height: 1.5;
+}
+.haru a{
+    font-size: 16px;
+    padding: 0 5px;
+    border-radius: 15px;
+    color: black;
+}
+a:hover{
+    color: snow;
+    text-shadow: var(--kage);
+}
+.ss{
+    background-image: var(--ss);
+    background-color: var(--sbc);
+}
+.ss h1{
+    color: var(--sakuya);
+}
+.ss a:hover{
+    background-color: var(--sakuya);
+}
+.um{
+    background-image: var(--um);
+    background-color: var(--mbc);
+}
+.um h1{
+    color: var(--masumi);
+}
+.um a:hover{
+    background-color: var(--masumi);
+}
+.mt{
+    background-image: var(--mt);
+    background-color: var(--tbc);
+}
+.mt h1{
+    color: var(--tuduru);
+}
+.mt a:hover{
+    background-color: var(--tuduru);
+}
+.ti{
+    background-image: var(--ti);
+    background-color: var(--ibc);
+}
+.ti h1{
+    color: var(--itaru);
+}
+.ti a:hover{
+    background-color: var(--itaru);
+}
+.ac{
+    background-image: var(--ac);
+    background-color: var(--cbc);
+}
+.ac h1{
+    color: var(--citron);
+}
+.ac a:hover{
+    background-color: var(--citron);
+}
+.ut{
+    background-image: var(--ut);
+    background-color: var(--ubc);
+}
+.ut h1{
+    color: var(--tikage);
+}
+.ut a:hover{
+    background-color: var(--tikage);
+}
+
+footer img{
+    height: 60px;
+}
+
+.page{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.page a{
+    margin: 0 10px;
+}
+.icon{
+    height: 25px;
+    width: 25px;
+    border-radius: 3.5px;
+    background-color: var(--bk);
+}
+
+@media screen and (max-width:768px) {
+    .menu-icon{
+        display: block;
+        color: var(--haru);
+        text-shadow: var(--kage);
+        cursor: pointer;
+        position: absolute;
+        font-size: 20px;
+        top: 12px;
+        right: 20px;
+    }
+    .link{
+        overflow: hidden;
+        height: 0;
+    }
+    .switch:checked + .link {
+        height: auto;
+    }
+    .icon{
+        height: 20px;
+        width: 20px;
+    }
+}
+@media screen and (max-width:480px) {
+    .link li{
+        width: calc(100%/3);
+        text-align: center;
+    }
+    .bg{
+        background-position: 0 0;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+    .introduction{
+        background-color: transparent;
+    }
+    .introduction li{
+        text-shadow: var(--kage);
+    }
+    .introduction a{
+        color: snow;
+    }
+    .haru{
+        background-color: rgba(255,255,255,.3);
+        width: 100%;
+    }
+    .ut{
+        margin-bottom: 0;
+    }
+    footer{
+        margin-bottom: 20px;
+    }
+}

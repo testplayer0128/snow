@@ -1,0 +1,262 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+  font-family:"Dancing Script",Serif;
+  font-style: italic;
+}
+
+:root{
+    --banri:#be8c00;
+    --bbc:rgba(190, 140, 0,.1);
+    --sb:url(../image/flower/3-1.banri.jpg);
+    --juza:#787878;
+    --jbc:rgba(120, 120, 120,.1);
+    --hj:url(../image/flower/3-2.juza.jpg);
+    --taiti:#ff4a8e;
+    --tbc:rgba(255, 74, 142,.1);
+    --nt:url(../image/flower/3-3.taiti.jpg);
+    --omi:#782800;
+    --obc:rgba(120, 40, 0,.1);
+    --fo:url(../image/flower/3-4.omi.jpg);
+    --sakyo:#c8be96;
+    --sbc:rgba(200, 190, 150,.1);
+    --fs:url(../image/flower/3-5.sakyo.jpg);
+    --azami:#ff5029;
+    --abc:rgba(255, 80, 41,.1);
+    --ia:url(../image/flower/3-6.azami.jpg);
+    --aki:#ff9b63;
+    --au:rgba(255,155,99,0.3);
+    --ww:rgba(255,255,255,.5);
+    --bk:rgba(0,0,0,0.5);
+    --kage:1px 1px 1px black;
+}
+*{box-sizing: border-box;}
+ul{list-style: none;}
+.fa{margin-right: 5px;}
+body{background-color: var(--au);}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+h1, a{
+    font-size:30px;
+    font-weight: normal;
+}
+
+header, footer{
+    color: var(--aki);
+    padding: 5px 20px;
+    text-shadow: var(--kage);
+}
+header, .link ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+header img{
+    height: 36px;
+    padding-right: 10px;
+}
+
+.menu-icon, .link-icon input[type="checkbox"]{
+    display: none;
+}
+.link{
+    height: 30px;
+    line-height: 30px;
+    background-color: var(--ww);
+    padding: 0 10px;
+}
+.link li{
+    padding: 0 10px;
+}
+.link a{
+    font-size: 16px;
+    text-shadow: var(--kage),1px 1px 3px snow;
+}
+.banri{color: var(--banri);}
+.juza{color: var(--juza);}
+.taiti{color: var(--taiti);}
+.omi{color: var(--omi);}
+.sakyo{color: var(--sakyo);}
+.azami{color: var(--azami);}
+
+.introduction{
+    background-color: rgba(255,255,255,0.7);
+}
+.introduction h1{
+    padding: 0 20px;
+}
+.introduction li{
+    padding: 5px 20px;
+    text-shadow: 1px 1px 1px white;
+}
+.bg{
+    background-position: right;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+}
+.bg h1{
+    text-shadow: var(--kage), 0px 0px 5px snow;
+}
+.aki{
+    width: 50%;
+}
+.aki ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+.aki li{
+    width: 50%;
+    line-height: 1.5;
+}
+.aki a{
+    font-size: 16px;
+    padding: 0 5px;
+    border-radius: 15px;
+    color: black;
+}
+a:hover{
+    color: snow;
+    text-shadow: var(--kage);
+}
+.sb{
+    background-image: var(--sb);
+    background-color: var(--bbc);
+}
+.sb h1{
+    color: var(--banri);
+}
+.sb a:hover{
+    background-color: var(--banri);
+}
+.hj{
+    background-image: var(--hj);
+    background-color: var(--jbc);
+}
+.hj h1{
+    color: var(--juza);
+}
+.hj a:hover{
+    background-color: var(--juza);
+}
+.nt{
+    background-image: var(--nt);
+    background-color: var(--tbc);
+}
+.nt h1{
+    color: var(--taiti);
+}
+.nt a:hover{
+    background-color: var(--taiti);
+}
+.fo{
+    background-image: var(--fo);
+    background-color: var(--obc);
+}
+.fo h1{
+    color: var(--omi);
+}
+.fo a:hover{
+    background-color: var(--omi);
+}
+.fs{
+    background-image: var(--fs);
+    background-color: var(--sbc);
+}
+.fs h1{
+    color: var(--sakyo);
+}
+.fs a:hover{
+    background-color: var(--sakyo);
+}
+.ia{
+    background-image: var(--ia);
+    background-color: var(--abc);
+}
+.ia h1{
+    color: var(--azami);
+}
+.ia a:hover{
+    background-color: var(--azami);
+}
+
+footer img{
+    height: 60px;
+}
+
+.page{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.page a{
+    margin: 0 10px;
+}
+.icon{
+    height: 25px;
+    width: 25px;
+    border-radius: 3.5px;
+    background-color: var(--bk);
+}
+
+@media screen and (max-width:768px) {
+    .menu-icon{
+        display: block;
+        color: var(--aki);
+        text-shadow: var(--kage);
+        cursor: pointer;
+        position: absolute;
+        font-size: 20px;
+        top: 12px;
+        right: 20px;
+    }
+    .link{
+        overflow: hidden;
+        height: 0;
+    }
+    .switch:checked + .link{
+        height: auto;
+    }
+    .icon{
+        height: 20px;
+        width: 20px;
+    }
+}
+@media screen and (max-width:480px) {
+    .link li{
+        width: calc(100%/3);
+        text-align: center;
+    }
+    .introduction{
+        background-color: transparent;
+    }
+    .introduction li{
+        text-shadow: var(--kage);
+    }
+    .bg{
+        background-position: 0 0;
+        background-size: cover;
+        margin-bottom: 20px;
+    }
+    .aki{
+        background-color: rgba(255,255,255,0.3);
+        width: 100%;
+    }
+    .aki a{
+        color: snow;
+    }
+    .ia{
+        margin-bottom: 0;
+    }
+    footer{
+        margin-bottom: 20px;
+    }
+}

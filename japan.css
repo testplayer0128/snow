@@ -1,0 +1,154 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+  font-family:"Dancing Script",Serif;
+  font-style: italic;
+  font-weight: normal;
+}
+
+:root{
+    --masumi:#826ee6;
+    --um:rgba(130, 110, 230,0.7);
+    --tenma:#fa0;
+    --st:rgba(255, 170, 0,0.7);
+    --yuki:#ffc0df;
+    --ry:rgba(255, 192, 223,0.7);
+    --muku:#64f0ff;
+    --sm:rgba(100, 240, 255,0.7);
+    --banri:#be8c00;
+    --sb:rgba(190, 140, 0,0.7);
+    --sakyo:#c8be96;
+    --fs:rgba(200, 190, 150,0.7);
+    --azami:#ff5029;
+    --ia:rgba(255, 80, 41,0.7);
+    --tumugi:#0032be;
+    --tu:rgba(0, 50, 190,0.7);
+    --hisoka:#001482;
+    --hi:rgba(0, 20, 130,0.7);
+    --homare:#d20029;
+    --ah:rgba(210, 0, 41,0.7);
+    --god:#9935cc;
+    --go:rgba(153, 53, 204,0.7);
+    --snow:#99ffc9;
+    --sw:rgba(153, 255, 201,0.7);
+    --kage:1px 1px 1px black;
+}
+*{box-sizing: border-box;}
+ul{list-style: none;}
+a{text-decoration: none;}
+h4{font-size: 20px;}
+p{
+    display: inline-block;
+    padding-left: 5px;
+}
+
+body{
+    background-image: url(image/snowwhite.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+
+header{
+    padding: 10px 30px;
+    color: aliceblue;
+    text-shadow: 1px 1px 1px black;
+}
+header h1{
+    font-weight: normal;
+    font-size: 25px;
+}
+header p{
+    width: fit-content;
+    font-style: normal;
+    background-color: rgba(0,0,128,0.7);
+    padding: 0 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-shadow: none;
+}
+
+main{
+    background-color: rgba(160, 164, 168, 0.4);
+    text-shadow: var(--kage);
+}
+.member{
+    display: flex;
+    flex-wrap: wrap;
+}
+.list{
+    width: calc((100% - 100px)/ 3);
+    margin: 10px calc(100px/6);
+}
+.list h4{
+    padding: 0 5px;
+    text-shadow: -1px -1px 10px snow,var(--kage);
+    width: fit-content;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.list ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:10px;
+}
+.list li{
+    width: 50%;
+    padding-bottom: 5px;
+}
+.info{
+    border-radius: 10px;
+}
+.satuki{color: var(--masumi);}
+.satuki .info:hover, .satuki h4:hover{background-color: var(--um);}
+.miran{color: var(--sakyo);}
+.miran .info:hover, .miran h4:hover{background-color: var(--fs);}
+.kirina{color: var(--azami);}
+.kirina .info:hover, .kirina h4:hover{background-color: var(--ia);}
+.yayoi{color: var(--tumugi);}
+.yayoi .info:hover, .yayoi h4:hover{background-color: var(--tu);}
+.hirari, .syo{color: var(--hisoka);}
+.hirari .info:hover, .hirari h4:hover, .syo .info:hover, .syo h4:hover{background-color: var(--hi);}
+.tokiya, .kaede{color: var(--tenma);}
+.tokiya .info:hover, .tokiya h4:hover, .kaede .info:hover, .kaede h4:hover{background-color: var(--st);}
+.kokoro{color: var(--muku);}
+.kokoro .info:hover, .kokoro h4:hover{background-color: var(--sm);}
+.hana{color: var(--snow);}
+.hana .info:hover, .hana h4:hover{background-color: var(--sw);}
+.ayaka{color: var(--homare);}
+.ayaka .info:hover, .ayaka h4:hover{background-color: var(--ah);}
+.masaki{color: var(--banri);}
+.masaki .info:hover, .masaki h4:hover{background-color: var(--sb);}
+.umi{color: var(--yuki);}
+.umi .info:hover, .umi h4:hover{background-color: var(--ry);}
+.ami, .akira{color: var(--god);}
+.ami .info:hover, .ami h4:hover, .akira .info:hover, .akira h4:hover{background-color: var(--go);}
+
+.info p:hover ,a:hover{
+    text-decoration: underline solid;
+}
+.info:hover,.member h4:hover{
+    color: snow;
+}
+
+footer{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+footer img{
+    height: 60px;
+}
+.snowwhite{
+    line-height: 60px;
+    display: flex;
+}
+.snowwhite img{
+    height: 40px;
+    margin-top: 10px;
+}
+.snowwhite a{
+    color: navy;
+}

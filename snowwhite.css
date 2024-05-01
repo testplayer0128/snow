@@ -1,0 +1,284 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+  font-family:"Dancing Script",Serif;
+  font-style: italic;
+}
+
+:root{
+    --sakuya:#ff8282;
+    --masumi:#826ee6;
+    --tuduru:#00e6b4;
+    --itaru:#ff375e;
+    --citron:#ade601;
+    --tikage:#50d2d0;
+    --tenma:#fa0;
+    --yuki:#ffc0df;
+    --muku:#64f0ff;
+    --misumi:#ffeb00;
+    --kazu:#00ff96;
+    --kumon:#d2aaf0;
+    --banri:#be8c00;
+    --juza:#787878;
+    --taiti:#ff4a8e;
+    --omi:#782800;
+    --sakyo:#c8be96;
+    --azami:#ff5029;
+    --tumugi:#0032be;
+    --tasuku:#00c80a;
+    --hisoka:#001482;
+    --homare:#d20029;
+    --azuma:#a00096;
+    --guy:#004d32;
+    --haru:#ff91b2;
+    --sp:rgba(255, 145, 178,0.5);
+    --natu:#ffc800;
+    --su:rgba(255, 200, 0,0.5);
+    --aki:#ff9b63;
+    --au:rgba(255,155,99,0.5);
+    --fuyu:#6ac1ff;
+    --wi:rgba(106, 193, 255,0.5);
+    --snow:#99ffc9;
+    --sw:rgba(153, 255, 201,0.5);
+}
+*{box-sizing: border-box;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+body{
+    background-image: url(image/snowwhite.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+
+header{
+    padding: 10px 30px;
+    color: aliceblue;
+    text-shadow: 1px 1px 1px black;
+}
+
+header h1{
+    font-weight: normal;
+    font-size: 25px;
+}
+
+header p{
+    width: fit-content;
+    font-style: normal;
+    background-color: rgba(0,0,128,0.7);
+    padding: 0 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-shadow: none;
+}
+
+/*リスト全体*/
+.member-list{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    text-shadow: 1px 1px 1px black,1px 1px 3px white;
+}
+
+/*各組条件*/
+.member-list li{
+    width: 20%;
+    text-align: center;
+}
+
+/*各組マーク*/
+.logo{
+    margin-top:5px;
+    padding: 5px 10px;
+    width: 80%;
+    background-color: snow;
+}
+
+.spring{background-color: var(--sp);}
+.summer{background-color: var(--su);}
+.autumn{background-color: var(--au);}
+.winter{background-color: var(--wi);}
+.another{background-color: var(--sw);}
+
+.title{
+    font-size: 25px;
+    font-style: normal;
+}
+.title:hover{
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+.sp{color: var(--haru);}
+.sp:hover{background-color: var(--haru);}
+.su{color: var(--natu);}
+.su:hover{background-color: var(--natu);}
+.au{color: var(--aki);}
+.au:hover{background-color: var(--aki);}
+.wi{color: var(--fuyu);}
+.wi:hover{background-color: var(--fuyu);}
+.sw{color: var(--snow);}
+.sw:hover{background-color: var(--snow);}
+
+.mankai{
+    background-color: rgba(255,255,255,0.3);
+    padding:1px 0;
+}
+.mankai li{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 10px auto;
+    width: fit-content;
+    font-size: 18px;
+    font-style: normal;
+    text-wrap: nowrap;
+}
+.mankai a:hover{
+    border-radius: 5px;
+    padding: 0 5px;
+    font-style: italic;
+}
+.sakura{color: var(--sakuya);}
+.sakura:hover{background-color: var(--sakuya);}
+.sumire{color: var(--masumi);}
+.sumire:hover{background-color: var(--masumi);}
+.tanpopo{color: var(--tuduru);}
+.tanpopo:hover{background-color: var(--tuduru);}
+.ga-bera{color: var(--itaru);}
+.ga-bera:hover{background-color: var(--itaru);}
+.jasmine{color: var(--citron);}
+.jasmine:hover{background-color: var(--citron);}
+.suzuran{color: var(--tikage);}
+.suzuran:hover{background-color: var(--tikage);}
+.himawari{color: var(--tenma);}
+.himawari:hover{background-color: var(--tenma);}
+.yuri{color: var(--yuki);}
+.yuri:hover{background-color: var(--yuki);}
+.muku{color: var(--muku);}
+.muku:hover{background-color: var(--muku);}
+.daria{color: var(--misumi);}
+.daria:hover{background-color: var(--misumi);}
+.piko{color: var(--kazu);}
+.piko:hover{background-color: var(--kazu);}
+.asagao{color: var(--kumon);}
+.asagao:hover{background-color: var(--kumon);}
+.cosmos{color: var(--banri);}
+.cosmos:hover{background-color: var(--banri);}
+.juza{color: var(--juza);}
+.juza:hover{background-color: var(--juza);}
+.taiti{color: var(--taiti);}
+.taiti:hover{background-color: var(--taiti);}
+.omi{color: var(--omi);}
+.omi:hover{background-color: var(--omi);}
+.kiku{color: var(--sakyo);}
+.kiku:hover{background-color: var(--sakyo);}
+.azami{color: var(--azami);}
+.azami:hover{background-color: var(--azami);}
+.suisen{color: var(--tumugi);}
+.suisen:hover{background-color: var(--tumugi);}
+.ran{color: var(--tasuku);}
+.ran:hover{background-color: var(--tasuku);}
+.hisoka{color: var(--hisoka);}
+.hisoka:hover{background-color: var(--hisoka);}
+.bara{color: var(--homare);}
+.bara:hover{background-color: var(--homare);}
+.azuma{color: var(--azuma);}
+.azuma:hover{background-color: var(--azuma);}
+.guy{color: var(--guy);}
+.guy:hover{background-color: var(--guy);}
+.male{color: blue;}
+.male:hover{background-color: blue;}
+.female{color: red;}
+.female:hover{background-color: red;}
+
+.message h3{
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.performance{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.performance a{
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    color: navy;
+    font-size: 15px;
+    font-style: normal;
+    border-radius: 15px;
+    margin: 5px calc(100px/12);
+    width: calc((100% - 100px) /6);
+}
+.performance a:hover{
+    background-color: rgba(0,0,128,0.7);
+    border-radius: 5px;
+    font-style: italic;
+}
+
+a:hover{
+    color: snow;
+}
+
+footer{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+footer img{
+    height: 60px;
+}
+.japan{
+    line-height: 60px;
+    display: flex;
+}
+.japan img{
+    height: 40px;
+    margin-top: 10px;
+}
+.japan a{
+    color: navy;
+}
+.japan a:hover{
+    text-decoration: underline solid;
+}
+
+/* スマホサイズ*/
+@media screen and (max-width: 480px) {
+    header, footer{
+        padding: 5px 10px;
+    }
+    header h1, .title, footer h1{
+        font-size: 20px;
+    }
+    header p{
+        font-size: 13px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    .logo{
+        padding: 5px;
+    }
+    .mankai li{
+        font-size: 12px;
+        margin: 5px auto;
+    }
+    .mankai a:hover{
+        border-radius: 2px;
+        padding: 0 2px;
+    }
+    .performance a{
+        width: calc((100% - 50px)/4);
+        margin: 5px calc(50px/8);
+        font-size: 13px;
+    }
+    .message h3{
+        font-size: 13px;
+        padding: 5px auto;
+    }
+}
