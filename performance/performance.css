@@ -213,10 +213,9 @@ header{padding: 5px 20px;}
 }
 
 footer{
-    height: 60px;
-    padding: 0 20px;
+    padding: 10px 20px;
 }
-.logo{height: 100%;}
+.logo{width: 25%;}
 
 .page{
     display: flex;
@@ -278,6 +277,12 @@ footer{
     .first{
         margin-top: 0;
     }
+    .logo{
+        width: 30%;
+    }
+    .page a{
+        margin: 0 5px;
+    }
     .icon{
         height: 20px;
         width: 20px;
@@ -286,10 +291,37 @@ footer{
 
 @media screen and (max-width:480px) {
     .list{
-        width: calc((100% - 30px)/2);
-        margin: 10px calc(30px/4);
+        width: 90%;
+        margin: 10px auto;
+        border-radius: 10px;
+        background-size: auto 100%;
     }
-    footer{
-        margin-bottom: 20px;
+    li,a{font-size: 15px;}
+    .kid li{width: 100%;}
+    .k1st:nth-child(2){margin-top: 0;}
+    footer{margin-bottom: 20px;}
+    .logo{width: 40%;}
+    #spring, #summer, #autumn, #winter{background-image: none;}
+    #spring,#autumn{
+        background-color: black;
+    }
+    #summer,#winter{
+        background-color: #0b1326;
+    }
+    #spring .list{
+        background-image: var(--sp)
+    }
+    #summer .list{
+        background-image: var(--su);
+    }
+    #autumn .list{
+        background-image: var(--au);
+    }
+    #winter .list{
+        background-image: var(--wi)
+    }
+    .bg{
+        background-color: rgba(200,200,200,.35);
+        border-radius: 10px;
     }
 }

@@ -43,6 +43,8 @@ form, input, div {
     --wi:rgba(106, 193, 255,0.5);
     --snow:#99ffc9;
     --sw:rgba(153, 255, 201,0.5);
+    --kage:1px 1px 1px black;
+    --bk:rgba(0,0,0,0.5);
 }
 *{box-sizing: border-box;}
 ul{list-style: none;}
@@ -220,32 +222,47 @@ header p{
     border-radius: 5px;
     font-style: italic;
 }
-
 a:hover{
     color: snow;
 }
 
 footer{
     padding: 10px 30px;
-    display: flex;
-    justify-content: space-between;
 }
+
 footer img{
-    height: 60px;
+    width: 25%;
 }
-.japan{
-    line-height: 60px;
+
+.page{
     display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.japan img{
-    height: 40px;
-    margin-top: 10px;
+.page a{margin: 0 10px;}
+.icon{
+    height: 25px;
+    width: 25px;
+    border-radius: 3.5px;
+    background-color: var(--bk);
 }
-.japan a{
-    color: navy;
-}
-.japan a:hover{
-    text-decoration: underline solid;
+
+@media screen and (max-width:768px) {
+    footer{
+        padding: 5px 10px;
+    }
+    footer img{
+        width: 30%;
+    }
+    .page a{
+        margin: 0 5px;
+    }
+    .icon{
+        height: 20px;
+        width: 20px;
+    }
 }
 
 /* スマホサイズ*/
@@ -277,8 +294,14 @@ footer img{
         margin: 5px calc(50px/8);
         font-size: 13px;
     }
+    .message{
+        background-color: rgba(255,255,255,0.5);
+    }
     .message h3{
         font-size: 13px;
-        padding: 5px auto;
+        padding: 5px 10px;
+    }
+    footer img{
+        width: 40%;
     }
 }

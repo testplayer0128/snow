@@ -94,22 +94,14 @@ main{text-shadow: var(--kage);}
 
 header{padding: 5px 20px;}
 
-.menu-icon, .link-icon input[type="checkbox"]{
-    display: none;
-}
-.link{
-    height: 30px;
-}
+.menu-icon, .link-icon input[type="checkbox"]{display: none;}
+.link{height: 30px;}
 .link ul{
     display: flex;
     flex-wrap: wrap;
 }
-.link li{
-    padding: 0 10px;
-}
-.link li:first-child{
-    padding-left: 20px;
-}
+.link li{padding: 0 10px;}
+.link li:first-child{padding-left: 20px;}
 .link a{font-size: 16px;}
 
 .mix1{color: var(--itaru);}
@@ -153,14 +145,13 @@ header{padding: 5px 20px;}
     width: calc((100% - 100px)/ 3);
     margin: 10px calc(100px/6);
 }
-.list{
-    width: calc(((100% - 100px)/ 3) + 100px/3);
-}
 .list:nth-child(2n + 1){
-    margin-left: calc((100% - 100px)/6);
+    margin-left: calc(100%/6);
+    margin-right: calc(100px/3);
 }
 .list:nth-child(2n){
-    margin-right: calc((100% - 100px)/6);
+    margin-right: calc(100%/6);
+    margin-left: calc(100px/3);
 }
 .list a, .list2 a,p{padding-left: 5px;}
 .mankai h4{
@@ -242,10 +233,9 @@ header{padding: 5px 20px;}
 }
 
 footer{
-    height: 60px;
-    padding: 0 20px;
+    padding: 10px 20px;
 }
-.logo{height: 100%;}
+.logo{width: 25%;}
 
 .page{
     display: flex;
@@ -296,14 +286,16 @@ footer{
         background-position: center;
     }
     .list, .list2{
-        width: calc(((100% - 30px) / 3) + 30px/6);
+        width: calc((100% - 30px) / 3);
         margin: 10px calc(30px/6);
     }
     .list:nth-child(2n + 1){
-        margin-left: calc((100% - 30px)/6);
+        margin-left: calc(100%/6);
+        margin-right: 10px;
     }
     .list:nth-child(2n){
-        margin-right: calc((100% - 30px)/6);
+        margin-right: calc(100%/6);
+        margin-left: 10px;
     }
     .info li{
         width: 100%;
@@ -314,6 +306,10 @@ footer{
     .first{
         margin-top: 0;
     }
+    .logo{width: 30%;}
+    .page a{
+        margin: 0 5px;
+    }
     .icon{
         height: 20px;
         width: 20px;
@@ -321,11 +317,26 @@ footer{
 }
 
 @media screen and (max-width:480px) {
-    .list{
-        width: calc((100% - 30px)/2);
-        margin: 10px calc(30px/4);
+    li,a{font-size: 15px;}
+    .list, .list2{
+        width: 90%;
+        margin: 10px auto;
+        background-size: auto 100%;
+    }
+    .list:nth-child(2n + 1), .list:nth-child(2n){
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .kid li{
+        width: 100%;
+    }
+    .k1st:nth-child(2){
+        margin-top: 0;
     }
     footer{
         margin-bottom: 20px;
+    }
+    .logo{
+        width: 40%;
     }
 }
