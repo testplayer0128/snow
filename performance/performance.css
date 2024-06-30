@@ -291,10 +291,15 @@ footer{
 
 @media screen and (max-width:480px) {
     .list{
-        width: 90%;
-        margin: 10px auto;
-        border-radius: 10px;
+        width: 100%;
+        margin: 5px 0;
         background-size: auto 100%;
+    }
+    .list h4{width: 100%;}
+    .bg{
+        background-color: rgba(200,200,200,.35);
+        padding: 10px 15px;
+        padding-bottom: 5px;
     }
     li,a{font-size: 15px;}
     .kid li{width: 100%;}
@@ -302,26 +307,16 @@ footer{
     footer{margin-bottom: 20px;}
     .logo{width: 40%;}
     #spring, #summer, #autumn, #winter{background-image: none;}
-    #spring,#autumn{
-        background-color: black;
+    .member{
+        background-color: transparent;
+        margin-bottom: 1px;
     }
-    #summer,#winter{
-        background-color: #0b1326;
-    }
-    #spring .list{
-        background-image: var(--sp)
-    }
-    #summer .list{
-        background-image: var(--su);
-    }
-    #autumn .list{
-        background-image: var(--au);
-    }
-    #winter .list{
-        background-image: var(--wi)
-    }
-    .bg{
-        background-color: rgba(200,200,200,.35);
-        border-radius: 10px;
-    }
+    #spring,#autumn{background-color: black;}
+    #summer,#winter{background-color: rgb(0, 0, 50);}
+    #spring .list{background-image: var(--sp)}
+    #summer .list{background-image: var(--su);}
+    #autumn .list{background-image: var(--au);}
+    #winter .list{background-image: var(--wi)}
+    #spring .list:first-child,#summer .list:first-child,#autumn .list:first-child,#winter .list:first-child{margin-top: 0;}
+    #spring .list:last-child,#summer .list:last-child,#autumn .list:last-child,#winter .list:last-child{margin-bottom: 0;}
 }

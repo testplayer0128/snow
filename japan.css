@@ -57,6 +57,7 @@ header{
     padding: 10px 30px;
     color: aliceblue;
     text-shadow: 1px 1px 1px black;
+    text-align: center;
 }
 header h1{
     font-weight: normal;
@@ -67,7 +68,7 @@ header p{
     font-style: normal;
     background-color: rgba(0,0,128,0.7);
     padding: 0 10px;
-    margin: 10px 0;
+    margin: 10px auto;
     border-radius: 10px;
     text-shadow: none;
 }
@@ -139,7 +140,7 @@ footer{
     padding: 10px 30px;
 }
 footer img{
-    width: 40%;
+    width: 25%;
 }
 .page{
     display: flex;
@@ -190,10 +191,10 @@ footer img{
     }
     main{
         background-image: none;
-        background-color: #436d93;
+        background-color: #416b91;
     }
     .member{
-        background-color: rgba(255,255,255,0.35);
+        background-color: transparent;
     }
     header h1, .title, footer h1{
         font-size: 20px;
@@ -205,18 +206,17 @@ footer img{
     }
     li{font-size: 15px;}
     .list{
-        width: calc(100% - 30px);
-        margin: 10px 15px;
+        width:100%;
+        margin: 10px 0;
         background-image: url(image/snowwhite.png);
         background-size: 100%;
         background-position: bottom;
     }
+    .list h4{width: 100%;}
     .bg{
         background-color: rgba(200,200,200,0.5);
-        padding-top: 10px;
-    }
-    .list,.bg{
-        border-radius: 10px;
+        padding: 10px 15px;
+        padding-bottom: 5px;
     }
     footer{
         padding-bottom: 20px;

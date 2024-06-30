@@ -54,6 +54,7 @@ body{
     background-image: url(image/snowwhite.png);
     background-size:100% 100%;
     background-repeat: no-repeat;
+    text-align: center;
 }
 
 header{
@@ -72,7 +73,7 @@ header p{
     font-style: normal;
     background-color: rgba(0,0,128,0.7);
     padding: 0 10px;
-    margin: 10px 0;
+    margin: 10px auto;
     border-radius: 10px;
     text-shadow: none;
 }
@@ -88,7 +89,6 @@ header p{
 /*各組条件*/
 .member-list li{
     width: 20%;
-    text-align: center;
 }
 
 /*各組マーク*/
@@ -208,7 +208,6 @@ header p{
     flex-wrap: wrap;
 }
 .performance a{
-    text-align: center;
     background-color: rgba(255,255,255,0.5);
     color: navy;
     font-size: 15px;
@@ -228,6 +227,7 @@ a:hover{
 
 footer{
     padding: 10px 30px;
+    text-align: left;
 }
 
 footer img{
@@ -295,7 +295,7 @@ footer img{
         font-size: 13px;
     }
     .message{
-        background-color: rgba(255,255,255,0.5);
+        background-color: rgba(255,255,255,0.8);
     }
     .message h3{
         font-size: 13px;

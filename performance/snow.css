@@ -245,6 +245,7 @@ footer{
     }
     .member-list{
         width: 100%;
+        border: 1px solid aliceblue;
     }
     .switch:checked + .list-info{
         height: auto;
@@ -289,42 +290,36 @@ footer{
         margin: 5px 0;
         width: 100%;
     }
-    .list{
-        width: 90%;
-        margin: 10px auto;
-        border-radius: 10px;
-        background-size: auto 100%;
+    .member{
+        background-color: transparent;
+        margin-bottom: 1px;
     }
+    .list{
+        width: 100%;
+        margin: 10px 0;
+        background-size:auto 100%;
+    }
+    .list h4{width: 100%;}
+    .bg{
+        background-color: rgba(200,200,200,.35);
+        padding: 10px 15px;
+        padding-bottom: 5px;
+    }
+    #kingdom .bg{background-color: rgba(200,200,200,0.5);}
     .list:nth-child(2n), .list:nth-child(2n + 1){
         margin-right: auto;
         margin-left: auto;
     }
     li,a{font-size: 15px;}
-    .kid li{
-        width: 100%;
-    }
-    .k1st:nth-child(2){
-        margin-top: 0;
-    }
-    footer{
-        margin-bottom: 20px;
-    }
+    .kid li{width: 100%;}
+    .k1st:nth-child(2){margin-top: 0;}
+    footer{margin-bottom: 20px;}
     .logo{width: 40%;}
     #spring,#summer,#autumn,#winter,#kingdom,#sw1,#sw2,#sw3,#sw4,#sw5,#sw6,#sw7{
         background-image: none;
     }
-    #spring,#autumn,#kingdom{
-        background-color: black;
-    }
-    #summer,#winter,#sw1{
-        background-color: #0b1326;
-    }
-    #sw2{background-color: #171a36;}
-    #sw3{background-color: #193250;}
-    #sw4{background-color: #1e171f;}
-    #sw5{background-color: #193250;}
-    #sw6{background-color: #223070;}
-    #sw7{background-color: #1d446f;}
+    #spring,#autumn,#kingdom{background-color: black;}
+    #summer,#winter,#sw1,#sw2,#sw3,#sw4,#sw5,#sw6,#sw7{background-color: #000050;}
     #spring .list{background-image: var(--sp)}
     #summer .list{background-image: var(--su);}
     #autumn .list{background-image: var(--au);}
@@ -337,14 +332,7 @@ footer{
     #sw5 .list{background-image: var(--s5);}
     #sw6 .list{background-image: var(--s6);}
     #sw7 .list{background-image: var(--s7);}
-    .bg{
-        background-color: rgba(200,200,200,.35);
-        border-radius: 10px;
-    }
-    #kingdom .bg{
-        background-color: rgba(200,200,200,0.5);
-    }
-    #sw1 .list,#sw4 .list,#sw7 .list{
-        background-position: center;
-    }
+    #sw1 .list,#sw4 .list,#sw7 .list{background-position: center;}
+    #spring .list:first-child,#summer .list:first-child,#autumn .list:first-child,#winter .list:first-child,#kingdom .list:first-child,#sw1 .list:first-child,#sw2 .list:first-child,#sw3 .list:first-child,#sw4 .list:first-child,#sw5 .list:first-child,#sw6 .list:first-child,#sw7 .list:first-child{margin-top: 0;}
+    #spring .list:last-child,#summer .list:last-child,#autumn .list:last-child,#winter .list:last-child,#kingdom .list:last-child,#sw1 .list:last-child,#sw2 .list:last-child,#sw3 .list:last-child,#sw4 .list:last-child,#sw5 .list:last-child,#sw6 .list:last-child,#sw7 .list:last-child{margin-bottom: 0;}
 }
